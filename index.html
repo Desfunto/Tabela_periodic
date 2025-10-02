@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Reações Químicas</title>
+  <link rel="stylesheet" href="./src/CSS/tabela.css">
+</head>
+
+<body>
+  <header>
+    🔬 Tabela de Reações Químicas
+  </header>
+
+  <main>
+
+    <div class="periodic-table">
+      <!-- Linha 1 -->
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('H',1,'1.008')">
+        <div class="num">1</div>
+        <div class="sym">H</div>
+      </div>
+      <!-- Painel fixo no espaço vazio -->
+      <div class="gap" style="grid-column: span 16">
+
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('He')">
+        <div class="num">2</div>
+        <div class="sym">He</div>
+      </div>
+      <!-- Linha 2 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Li')">
+        <div class="num">3</div>
+        <div class="sym">Li</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Be')">
+        <div class="num">4</div>
+        <div class="sym">Be</div>
+      </div>
+      <div class="gap" style="grid-column: span 10"></div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('B')">
+        <div class="num">5</div>
+        <div class="sym">B</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('C')">
+        <div class="num">6</div>
+        <div class="sym">C</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('N')">
+        <div class="num">7</div>
+        <div class="sym">N</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('O')">
+        <div class="num">8</div>
+        <div class="sym">O</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('F')">
+        <div class="num">9</div>
+        <div class="sym">F</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Ne')">
+        <div class="num">10</div>
+        <div class="sym">Ne</div>
+      </div>
+
+      <!-- Linha 3 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Na')">
+        <div class="num">11</div>
+        <div class="sym">Na</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Mg')">
+        <div class="num">12</div>
+        <div class="sym">Mg</div>
+      </div>
+      <div class="gap" style="grid-column: span 10"></div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Al')">
+        <div class="num">13</div>
+        <div class="sym">Al</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Si')">
+        <div class="num">14</div>
+        <div class="sym">Si</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('P')">
+        <div class="num">15</div>
+        <div class="sym">P</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('S')">
+        <div class="num">16</div>
+        <div class="sym">S</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('Cl')">
+        <div class="num">17</div>
+        <div class="sym">Cl</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Ar')">
+        <div class="num">18</div>
+        <div class="sym">Ar</div>
+      </div>
+
+      <!-- Linha 4 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('K')">
+        <div class="num">19</div>
+        <div class="sym">K</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Ca')">
+        <div class="num">20</div>
+        <div class="sym">Ca</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Sc')">
+        <div class="num">21</div>
+        <div class="sym">Sc</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ti')">
+        <div class="num">22</div>
+        <div class="sym">Ti</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('V')">
+        <div class="num">23</div>
+        <div class="sym">V</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cr')">
+        <div class="num">24</div>
+        <div class="sym">Cr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Mn')">
+        <div class="num">25</div>
+        <div class="sym">Mn</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Fe')">
+        <div class="num">26</div>
+        <div class="sym">Fe</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Co')">
+        <div class="num">27</div>
+        <div class="sym">Co</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ni')">
+        <div class="num">28</div>
+        <div class="sym">Ni</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cu')">
+        <div class="num">29</div>
+        <div class="sym">Cu</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Zn')">
+        <div class="num">30</div>
+        <div class="sym">Zn</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Ga')">
+        <div class="num">31</div>
+        <div class="sym">Ga</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Ge')">
+        <div class="num">32</div>
+        <div class="sym">Ge</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('As')">
+        <div class="num">33</div>
+        <div class="sym">As</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('Se')">
+        <div class="num">34</div>
+        <div class="sym">Se</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('Br')">
+        <div class="num">35</div>
+        <div class="sym">Br</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Kr')">
+        <div class="num">36</div>
+        <div class="sym">Kr</div>
+      </div>
+
+      <!-- Linha 5 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Rb')">
+        <div class="num">37</div>
+        <div class="sym">Rb</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Sr')">
+        <div class="num">38</div>
+        <div class="sym">Sr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Y')">
+        <div class="num">39</div>
+        <div class="sym">Y</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Zr')">
+        <div class="num">40</div>
+        <div class="sym">Zr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Nb')">
+        <div class="num">41</div>
+        <div class="sym">Nb</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Mo')">
+        <div class="num">42</div>
+        <div class="sym">Mo</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Tc')">
+        <div class="num">43</div>
+        <div class="sym">Tc</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ru')">
+        <div class="num">44</div>
+        <div class="sym">Ru</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Rh')">
+        <div class="num">45</div>
+        <div class="sym">Rh</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Pd')">
+        <div class="num">46</div>
+        <div class="sym">Pd</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ag')">
+        <div class="num">47</div>
+        <div class="sym">Ag</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cd')">
+        <div class="num">48</div>
+        <div class="sym">Cd</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('In')">
+        <div class="num">49</div>
+        <div class="sym">In</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Sn')">
+        <div class="num">50</div>
+        <div class="sym">Sn</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Sb')">
+        <div class="num">51</div>
+        <div class="sym">Sb</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Te')">
+        <div class="num">52</div>
+        <div class="sym">Te</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('I')">
+        <div class="num">53</div>
+        <div class="sym">I</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Xe')">
+        <div class="num">54</div>
+        <div class="sym">Xe</div>
+      </div>
+
+      <!-- Linha 6 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Cs')">
+        <div class="num">55</div>
+        <div class="sym">Cs</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Ba')">
+        <div class="num">56</div>
+        <div class="sym">Ba</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('La-Lu')">
+        <div class="num">57-71</div>
+        <div class="sym">La-Lu</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Hf')">
+        <div class="num">72</div>
+        <div class="sym">Hf</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ta')">
+        <div class="num">73</div>
+        <div class="sym">Ta</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('W')">
+        <div class="num">74</div>
+        <div class="sym">W</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Re')">
+        <div class="num">75</div>
+        <div class="sym">Re</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Os')">
+        <div class="num">76</div>
+        <div class="sym">Os</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ir')">
+        <div class="num">77</div>
+        <div class="sym">Ir</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Pt')">
+        <div class="num">78</div>
+        <div class="sym">Pt</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Au')">
+        <div class="num">79</div>
+        <div class="sym">Au</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Hg')">
+        <div class="num">80</div>
+        <div class="sym">Hg</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Tl')">
+        <div class="num">81</div>
+        <div class="sym">Tl</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Pb')">
+        <div class="num">82</div>
+        <div class="sym">Pb</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Bi')">
+        <div class="num">83</div>
+        <div class="sym">Bi</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Po')">
+        <div class="num">84</div>
+        <div class="sym">Po</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('At')">
+        <div class="num">85</div>
+        <div class="sym">At</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Rn')">
+        <div class="num">86</div>
+        <div class="sym">Rn</div>
+      </div>
+
+      <!-- Linha 7 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Fr')">
+        <div class="num">87</div>
+        <div class="sym">Fr</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Ra')">
+        <div class="num">88</div>
+        <div class="sym">Ra</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Ac-Lr')">
+        <div class="num">89-103</div>
+        <div class="sym">Ac-Lr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Rf')">
+        <div class="num">104</div>
+        <div class="sym">Rf</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Db')">
+        <div class="num">105</div>
+        <div class="sym">Db</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Sg')">
+        <div class="num">106</div>
+        <div class="sym">Sg</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Bh')">
+        <div class="num">107</div>
+        <div class="sym">Bh</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Hs')">
+        <div class="num">108</div>
+        <div class="sym">Hs</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Mt')">
+        <div class="num">109</div>
+        <div class="sym">Mt</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ds')">
+        <div class="num">110</div>
+        <div class="sym">Ds</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Rg')">
+        <div class="num">111</div>
+        <div class="sym">Rg</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cn')">
+        <div class="num">112</div>
+        <div class="sym">Cn</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Nh')">
+        <div class="num">113</div>
+        <div class="sym">Nh</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Fl')">
+        <div class="num">114</div>
+        <div class="sym">Fl</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Mc')">
+        <div class="num">115</div>
+        <div class="sym">Mc</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Lv')">
+        <div class="num">116</div>
+        <div class="sym">Lv</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('Ts')">
+        <div class="num">117</div>
+        <div class="sym">Ts</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Og')">
+        <div class="num">118</div>
+        <div class="sym">Og</div>
+      </div>
+    </div>
+
+    <!-- Lantanídeos -->
+    <div class="extra">
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('La')">
+        <div class="num">57</div>
+        <div class="sym">La</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Ce')">
+        <div class="num">58</div>
+        <div class="sym">Ce</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Pr')">
+        <div class="num">59</div>
+        <div class="sym">Pr</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Nd')">
+        <div class="num">60</div>
+        <div class="sym">Nd</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Pm')">
+        <div class="num">61</div>
+        <div class="sym">Pm</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Sm')">
+        <div class="num">62</div>
+        <div class="sym">Sm</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Eu')">
+        <div class="num">63</div>
+        <div class="sym">Eu</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Gd')">
+        <div class="num">64</div>
+        <div class="sym">Gd</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Tb')">
+        <div class="num">65</div>
+        <div class="sym">Tb</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Dy')">
+        <div class="num">66</div>
+        <div class="sym">Dy</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Ho')">
+        <div class="num">67</div>
+        <div class="sym">Ho</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Er')">
+        <div class="num">68</div>
+        <div class="sym">Er</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Tm')">
+        <div class="num">69</div>
+        <div class="sym">Tm</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Yb')">
+        <div class="num">70</div>
+        <div class="sym">Yb</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Lu')">
+        <div class="num">71</div>
+        <div class="sym">Lu</div>
+      </div>
+    </div>
+
+    <!-- Actinídeos -->
+    <div class="extra">
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Ac')">
+        <div class="num">89</div>
+        <div class="sym">Ac</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Th')">
+        <div class="num">90</div>
+        <div class="sym">Th</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Pa')">
+        <div class="num">91</div>
+        <div class="sym">Pa</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('U')">
+        <div class="num">92</div>
+        <div class="sym">U</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Np')">
+        <div class="num">93</div>
+        <div class="sym">Np</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Pu')">
+        <div class="num">94</div>
+        <div class="sym">Pu</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Am')">
+        <div class="num">95</div>
+        <div class="sym">Am</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Cm')">
+        <div class="num">96</div>
+        <div class="sym">Cm</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Bk')">
+        <div class="num">97</div>
+        <div class="sym">Bk</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Cf')">
+        <div class="num">98</div>
+        <div class="sym">Cf</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Es')">
+        <div class="num">99</div>
+        <div class="sym">Es</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Fm')">
+        <div class="num">100</div>
+        <div class="sym">Fm</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Md')">
+        <div class="num">101</div>
+        <div class="sym">Md</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('No')">
+        <div class="num">102</div>
+        <div class="sym">No</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Lr')">
+        <div class="num">103</div>
+        <div class="sym">Lr</div>
+      </div>
+    </div>
+
+    <div class="chips" id="chips">
+      <div class="chip">Elemento 1: Am</div>
+      <div class="chip">Elemento 2: Fm</div>
+      <div class="chip">Próximo clique → Elemento 1</div>
+    </div>
+
+    <div class="selector">
+      <label for="element1">Escolha o primeiro elemento:</label>
+      <select id="element1">
+        <option value="agua">Água (H₂O)</option>
+        <option value="sodio">Sódio (Na)</option>
+        <option value="cloro">Cloro (Cl₂)</option>
+        <option value="hidrogenio">Hidrogênio (H₂)</option>
+        <option value="oxigenio">Oxigênio (O₂)</option>
+        <option value="amonia">Amônia (NH₃)</option>
+        <option value="acido-sulfurico">Ácido Sulfúrico (H₂SO₄)</option>
+      </select>
+
+      <label for="element2">Escolha o segundo elemento:</label>
+      <select id="element2">
+        <option value="sodio">Sódio (Na)</option>
+        <option value="agua">Água (H₂O)</option>
+        <option value="cloro">Cloro (Cl₂)</option>
+        <option value="hidrogenio">Hidrogênio (H₂)</option>
+        <option value="oxigenio">Oxigênio (O₂)</option>
+        <option value="amonia">Amônia (NH₃)</option>
+        <option value="acido-sulfurico">Ácido Sulfúrico (H₂SO₄)</option>
+      </select>
+
+      <button onclick="mostrarReacao()">Ver Reação</button>
+    </div>
+
+    <div id="resultado" class="reaction-result" style="display: none;">
+      <h2 id="titulo"></h2>
+      <p id="descricao"></p>
+      <img id="imagem" src="" alt="Imagem da reação">
+    </div>
+    <div id="group_popup_panel" style="display:none;" class="popup-panel">
+      <h3 id="popup-titulo"></h3>
+      <p id="popup-simbolo"></p>
+      <p id="popup-numero"></p>
+      <p id="popup-massa"></p>
+    </div>
+
+  </main>
+
+  <script>
+    // ====== SELEÇÃO via TABELA/COMPOSTOS ======
+    let proximo = 'element1';
+    const chips = document.getElementById('chips');
+
+    function ensureOption(selectEl, value, label) {
+      const exists = Array.from(selectEl.options).some(o => o.value === value);
+      if (!exists) {
+        const opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = label;
+        selectEl.appendChild(opt);
+      }
+    }
+
+    function updateChips() {
+      const e1 = document.getElementById('element1');
+      const e2 = document.getElementById('element2');
+      const t1 = e1.options[e1.selectedIndex]?.text || e1.value || '-';
+      const t2 = e2.options[e2.selectedIndex]?.text || e2.value || '-';
+
+      chips.innerHTML = `
+        <div class="chip">Elemento 1: ${t1}</div>
+        <div class="chip">Elemento 2: ${t2}</div>
+        <div class="chip">Próximo clique → ${(proximo === 'element1') ? 'Elemento 1' : 'Elemento 2'}</div>`;
+    }
+
+    const elementNames = {
+      H: "Hidrogênio", He: "Hélio", Li: "Lítio", Be: "Berílio", B: "Boro", C: "Carbono", N: "Nitrogênio", O: "Oxigênio", F: "Flúor",
+      Ne: "Neônio", Na: "Sódio", Mg: "Magnésio", Al: "Alumínio", Si: "Silício", P: "Fósforo", S: "Enxofre", Cl: "Cloro", Ar: "Argônio",
+      K: "Potássio", Ca: "Cálcio", Sc: "Escândio", Ti: "Titânio", V: "Vanádio", Cr: "Cromo", Mn: "Manganês", Fe: "Ferro", Co: "Cobalto",
+      Ni: "Níquel", Cu: "Cobre", Zn: "Zinco", Ga: "Gálio", Ge: "Germânio", As: "Arsênio", Se: "Selênio", Br: "Bromo", Kr: "Criptônio", Rb: "Rubídio",
+      Sr: "Estrôncio", Y: "Ítrio", Zr: "Zircônio", Nb: "Nióbio", Mo: "Molibdênio", Tc: "Tecnécio", Ru: "Rutênio", Rh: "Ródio", Pd: "Paládio", Ag: "Prata",
+      Cd: "Cádmio", In: "Índio", Sn: "Estanho", Sb: "Antimônio", Te: "Telúrio", I: "Iodo", Xe: "Xenônio", Cs: "Césio", Ba: "Bário", La: "Lantânio",
+      Ce: "Cério", Pr: "Praseodímio", Nd: "Neodímio", Pm: "Promécio", Sm: "Samário", Eu: "Európio", Gd: "Gadolínio", Tb: "Térbio", Dy: "Disprósio",
+      Ho: "Hólmio", Er: "Érbio", Tm: "Túlio", Yb: "Itérbio", Lu: "Lutécio", Hf: "Háfnio", Ta: "Tântalo", W: "Tungstênio", Re: "Rênio", Os: "Ósmio",
+      Ir: "Irídio", Pt: "Platina", Au: "Ouro", Hg: "Mercúrio", Tl: "Tálio", Pb: "Chumbo", Bi: "Bismuto", Po: "Polônio", At: "Astato", Rn: "Radônio",
+      Fr: "Frâncio", Ra: "Rádio", Ac: "Actínio", Th: "Tório", Pa: "Protactínio", U: "Urânio", Np: "Neptúnio", Pu: "Plutônio", Am: "Amerício",
+      Cm: "Cúrio", Bk: "Berkélio", Cf: "Califórnio", Es: "Einstênio", Fm: "Férmio", Md: "Mendelévio", No: "Nobélio", Lr: "Laurêncio", Rf: "Rutherfórdio",
+      Db: "Dúbnio", Sg: "Seabórgio", Bh: "Bóhrio", Hs: "Hássio", Mt: "Meitnério", Ds: "Darmstádio", Rg: "Roentgênio", Cn: "Copernício",
+      Nh: "Nihônio", Fl: "Fleróvio", Mc: "Moscóvio", Lv: "Livermório", Ts: "Tenessino", Og: "Oganessônio"
+    };
+
+    const valueMap = {
+      H: "hidrogenio", He: "helio", Li: "litio", Be: "berilio", B: "boro", C: "carbono", N: "nitrogenio", O: "oxigenio", F: "fluor", Ne: "neonio",
+      Na: "sodio", Mg: "magnesio", Al: "aluminio", Si: "silicio", P: "fosforo", S: "enxofre", Cl: "cloro", Ar: "argonio", K: "potassio", Ca: "calcio",
+      Sc: "escandio", Ti: "titanio", V: "vanadio", Cr: "cromo", Mn: "manganes", Fe: "ferro", Co: "cobalto", Ni: "niquel", Cu: "cobre", Zn: "zinco",
+      Ga: "galio", Ge: "germanio", As: "arsenio", Se: "selenio", Br: "bromo", Kr: "criptonio", Rb: "rubidio", Sr: "estroncio", Y: "itrio",
+      Zr: "zirconio", Nb: "niobio", Mo: "molibdenio", Tc: "tecnecio", Ru: "rutenio", Rh: "rodio", Pd: "paladio", Ag: "prata", Cd: "cadmio",
+      In: "indio", Sn: "estanho", Sb: "antimonio", Te: "telurio", I: "iodo", Xe: "xenonio", Cs: "cesio", Ba: "bario", La: "lantanio", Ce: "cerio",
+      Pr: "praseodimio", Nd: "neodimio", Pm: "promecio", Sm: "samario", Eu: "europio", Gd: "gadolnio", Tb: "terbio", Dy: "disprosio", Ho: "holmio",
+      Er: "erbio", Tm: "tulio", Yb: "iterbio", Lu: "lutecio", Hf: "hafnio", Ta: "tantalo", W: "tungstenio", Re: "renio", Os: "osmiio", Ir: "iridio",
+      Pt: "platina", Au: "ouro", Hg: "mercurio", Tl: "talio", Pb: "chumbo", Bi: "bismuto", Po: "polonio", At: "astato", Rn: "radonio", Fr: "francio",
+      Ra: "radio", Ac: "actinio", Th: "torio", Pa: "protactinio", U: "uranio", Np: "neptunio", Pu: "plutonio", Am: "americio", Cm: "curio", Bk: "berkelio",
+      Cf: "californio", Es: "einstenio", Fm: "fermio", Md: "mendelevio", No: "nobelio", Lr: "laurencio", Rf: "rutherfodio", Db: "dubnio", Sg: "seaborgio",
+      Bh: "bohrio", Hs: "hassio", Mt: "meitnerio", Ds: "darmstadio", Rg: "roentgenio", Cn: "copernicio", Nh: "nihonio", Fl: "flerovio", Mc: "moscovio",
+      Lv: "livermorio", Ts: "tennessino", Og: "oganessonio"
+    };
+
+    const elementData = {
+      H: { numero: 1, massa: "1,008", nome: "Hidrogênio" },
+      He: { numero: 2, massa: "4,0026", nome: "Hélio" },
+      Li: { numero: 3, massa: "6,94", nome: "Lítio" },
+      Be: { numero: 4, massa: "9,0122", nome: "Berílio" },
+      B: { numero: 5, massa: "10,81", nome: "Boro" },
+      C: { numero: 6, massa: "12,011", nome: "Carbono" },
+      N: { numero: 7, massa: "14,007", nome: "Nitrogênio" },
+      O: { numero: 8, massa: "15,999", nome: "Oxigênio" },
+      F: { numero: 9, massa: "18,998", nome: "Flúor" },
+      Ne: { numero: 10, massa: "20,180", nome: "Neônio" },
+      Na: { numero: 11, massa: "22,990", nome: "Sódio" },
+      Mg: { numero: 12, massa: "24,305", nome: "Magnésio" },
+      Al: { numero: 13, massa: "26,982", nome: "Alumínio" },
+      Si: { numero: 14, massa: "28,085", nome: "Silício" },
+      P: { numero: 15, massa: "30,974", nome: "Fósforo" },
+      S: { numero: 16, massa: "32,06", nome: "Enxofre" },
+      Cl: { numero: 17, massa: "35,45", nome: "Cloro" },
+      Ar: { numero: 18, massa: "39,948", nome: "Argônio" },
+      K: { numero: 19, massa: "39,098", nome: "Potássio" },
+      Ca: { numero: 20, massa: "40,078", nome: "Cálcio" },
+      Sc: { numero: 21, massa: "44,956", nome: "Escândio" },
+      Ti: { numero: 22, massa: "47,867", nome: "Titânio" },
+      V: { numero: 23, massa: "50,942", nome: "Vanádio" },
+      Cr: { numero: 24, massa: "51,996", nome: "Cromo" },
+      Mn: { numero: 25, massa: "54,938", nome: "Manganês" },
+      Fe: { numero: 26, massa: "55,845", nome: "Ferro" },
+      Co: { numero: 27, massa: "58,933", nome: "Cobalto" },
+      Ni: { numero: 28, massa: "58,693", nome: "Níquel" },
+      Cu: { numero: 29, massa: "63,546", nome: "Cobre" },
+      Zn: { numero: 30, massa: "65,38", nome: "Zinco" },
+      Ga: { numero: 31, massa: "69,723", nome: "Gálio" },
+      Ge: { numero: 32, massa: "72,630", nome: "Germânio" },
+      As: { numero: 33, massa: "74,922", nome: "Arsênio" },
+      Se: { numero: 34, massa: "78,971", nome: "Selênio" },
+      Br: { numero: 35, massa: "79,904", nome: "Bromo" },
+      Kr: { numero: 36, massa: "83,798", nome: "Criptônio" },
+      Rb: { numero: 37, massa: "85,468", nome: "Rubídio" },
+      Sr: { numero: 38, massa: "87,62", nome: "Estrôncio" },
+      Y: { numero: 39, massa: "88,906", nome: "Ítrio" },
+      Zr: { numero: 40, massa: "91,224", nome: "Zircônio" },
+      Nb: { numero: 41, massa: "92,906", nome: "Nióbio" },
+      Mo: { numero: 42, massa: "95,95", nome: "Molibdênio" },
+      Tc: { numero: 43, massa: "[98]", nome: "Tecnécio" },
+      Ru: { numero: 44, massa: "101,07", nome: "Rutênio" },
+      Rh: { numero: 45, massa: "102,91", nome: "Ródio" },
+      Pd: { numero: 46, massa: "106,42", nome: "Paládio" },
+      Ag: { numero: 47, massa: "107,87", nome: "Prata" },
+      Cd: { numero: 48, massa: "112,41", nome: "Cádmio" },
+      In: { numero: 49, massa: "114,82", nome: "Índio" },
+      Sn: { numero: 50, massa: "118,71", nome: "Estanho" },
+      Sb: { numero: 51, massa: "121,76", nome: "Antimônio" },
+      Te: { numero: 52, massa: "127,60", nome: "Telúrio" },
+      I: { numero: 53, massa: "126,90", nome: "Iodo" },
+      Xe: { numero: 54, massa: "131,29", nome: "Xenônio" },
+      Cs: { numero: 55, massa: "132,91", nome: "Césio" },
+      Ba: { numero: 56, massa: "137,33", nome: "Bário" },
+      La: { numero: 57, massa: "138,91", nome: "Lantânio" },
+      Ce: { numero: 58, massa: "140,12", nome: "Cério" },
+      Pr: { numero: 59, massa: "140,91", nome: "Praseodímio" },
+      Nd: { numero: 60, massa: "144,24", nome: "Neodímio" },
+      Pm: { numero: 61, massa: "[145]", nome: "Promécio" },
+      Sm: { numero: 62, massa: "150,36", nome: "Samário" },
+      Eu: { numero: 63, massa: "151,96", nome: "Európio" },
+      Gd: { numero: 64, massa: "157,25", nome: "Gadolínio" },
+      Tb: { numero: 65, massa: "158,93", nome: "Térbio" },
+      Dy: { numero: 66, massa: "162,50", nome: "Disprósio" },
+      Ho: { numero: 67, massa: "164,93", nome: "Hólmio" },
+      Er: { numero: 68, massa: "167,26", nome: "Érbio" },
+      Tm: { numero: 69, massa: "168,93", nome: "Túlio" },
+      Yb: { numero: 70, massa: "173,05", nome: "Itérbio" },
+      Lu: { numero: 71, massa: "174,97", nome: "Lutécio" },
+      Hf: { numero: 72, massa: "178,49", nome: "Háfnio" },
+      Ta: { numero: 73, massa: "180,95", nome: "Tântalo" },
+      W: { numero: 74, massa: "183,84", nome: "Tungstênio" },
+      Re: { numero: 75, massa: "186,21", nome: "Rênio" },
+      Os: { numero: 76, massa: "190,23", nome: "Ósmio" },
+      Ir: { numero: 77, massa: "192,22", nome: "Irídio" },
+      Pt: { numero: 78, massa: "195,08", nome: "Platina" },
+      Au: { numero: 79, massa: "196,97", nome: "Ouro" },
+      Hg: { numero: 80, massa: "200,59", nome: "Mercúrio" },
+      Tl: { numero: 81, massa: "204,38", nome: "Tálio" },
+      Pb: { numero: 82, massa: "207,2", nome: "Chumbo" },
+      Bi: { numero: 83, massa: "208,98", nome: "Bismuto" },
+      Po: { numero: 84, massa: "[209]", nome: "Polônio" },
+      At: { numero: 85, massa: "[210]", nome: "Astato" },
+      Rn: { numero: 86, massa: "[222]", nome: "Radônio" },
+      Fr: { numero: 87, massa: "[223]", nome: "Frâncio" },
+      Ra: { numero: 88, massa: "[226]", nome: "Rádio" },
+      Ac: { numero: 89, massa: "[227]", nome: "Actínio" },
+      Th: { numero: 90, massa: "232,04", nome: "Tório" },
+      Pa: { numero: 91, massa: "231,04", nome: "Protactínio" },
+      U: { numero: 92, massa: "238,03", nome: "Urânio" },
+      Np: { numero: 93, massa: "[237]", nome: "Neptúnio" },
+      Pu: { numero: 94, massa: "[244]", nome: "Plutônio" },
+      Am: { numero: 95, massa: "[243]", nome: "Amerício" },
+      Cm: { numero: 96, massa: "[247]", nome: "Cúrio" },
+      Bk: { numero: 97, massa: "[247]", nome: "Berkélio" },
+      Cf: { numero: 98, massa: "[251]", nome: "Califórnio" },
+      Es: { numero: 99, massa: "[252]", nome: "Einstênio" },
+      Fm: { numero: 100, massa: "[257]", nome: "Férmio" },
+      Md: { numero: 101, massa: "[258]", nome: "Mendelévio" },
+      No: { numero: 102, massa: "[259]", nome: "Nobélio" },
+      Lr: { numero: 103, massa: "[262]", nome: "Laurêncio" },
+      Rf: { numero: 104, massa: "[267]", nome: "Rutherfórdio" },
+      Db: { numero: 105, massa: "[270]", nome: "Dúbnio" },
+      Sg: { numero: 106, massa: "[271]", nome: "Seabórgio" },
+      Bh: { numero: 107, massa: "[270]", nome: "Bóhrio" },
+      Hs: { numero: 108, massa: "[277]", nome: "Hássio" },
+      Mt: { numero: 109, massa: "[276]", nome: "Meitnério" },
+      Ds: { numero: 110, massa: "[281]", nome: "Darmstádio" },
+      Rg: { numero: 111, massa: "[282]", nome: "Roentgênio" },
+      Cn: { numero: 112, massa: "[285]", nome: "Copernício" },
+      Nh: { numero: 113, massa: "[286]", nome: "Nihônio" },
+      Fl: { numero: 114, massa: "[289]", nome: "Fleróvio" },
+      Mc: { numero: 115, massa: "[290]", nome: "Moscóvio" },
+      Lv: { numero: 116, massa: "[293]", nome: "Livermório" },
+      Ts: { numero: 117, massa: "[294]", nome: "Tenessino" },
+      Og: { numero: 118, massa: "[294]", nome: "Oganessônio" }
+    };
+    
+    function mostrarPainelElemento(sym) {
+      const data = elementData[sym];
+      if (data) {
+        document.getElementById("popup-titulo").innerText = data.nome;
+        document.getElementById("popup-simbolo").innerText = `Símbolo: ${sym}`;
+        document.getElementById("popup-numero").innerText = `Número atômico: ${data.numero}`;
+        document.getElementById("popup-massa").innerText = `Massa atômica: ${data.massa}`;
+      }
+      document.getElementById("group_popup_panel").style.display = "block";
+    }
+
+
+
+
+    function selecionarElementoDaTabela(sym) {
+      const value = valueMap[sym] || sym.toLowerCase();
+      const name = elementNames[sym] || sym;
+      const label = `${name} (${sym})`; // "Hidrogênio (H)"
+
+      const sel = document.getElementById(proximo);
+      ensureOption(sel, value, label);
+      sel.value = value;
+
+      proximo = (proximo === 'element1') ? 'element2' : 'element1';
+      updateChips();
+
+      mostrarPainelElemento(sym);
+    }
+
+
+    function selecionarComposto(value, label) {
+      const sel = document.getElementById(proximo);
+      ensureOption(sel, value, label);
+      sel.value = value;
+      proximo = (proximo === 'element1') ? 'element2' : 'element1';
+      updateChips();
+    }
+
+    function mostrarReacao() {
+      const e1 = document.getElementById("element1").value;
+      const e2 = document.getElementById("element2").value;
+      const resultado = document.getElementById("resultado");
+      const titulo = document.getElementById("titulo");
+      const descricao = document.getElementById("descricao");
+      const imagem = document.getElementById("imagem");
+
+      let reacao = {
+        titulo: "Nenhuma reação cadastrada",
+        descricao: "Escolha outra combinação para visualizar a reação.",
+        imagem: ""
+      };
+
+      // Reações cadastradas
+      //#1 água / sódio
+      if ((e1 === "agua" && e2 === "sodio") || (e1 === "sodio" && e2 === "agua")) {
+        reacao = {
+          titulo: "Reação: Sódio + Água → Hidróxido de Sódio + Hidrogênio",
+          descricao: "Reação altamente exotérmica que libera hidrogênio gasoso e calor, formando NaOH.",
+          imagem: "./src/IMG/reacao_agua_sodio.jpg"
+        };
+      }
+      //#2 hidrogênio / oxigênio
+      if ((e1 === "hidrogenio" && e2 === "oxigenio") || (e1 === "oxigenio" && e2 === "hidrogenio")) {
+        reacao = {
+          titulo: "Reação: Hidrogênio + Oxigênio → Água",
+          descricao: "Combustão do H₂ em presença de O₂ formando água, reação exotérmica liberando energia.",
+          imagem: "./src/IMG/reacao_hidrogenio_oxigenio.png"
+        };
+      }
+      //#3 cloro / sódio
+      if ((e1 === "cloro" && e2 === "sodio") || (e1 === "sodio" && e2 === "cloro")) {
+        reacao = {
+          titulo: "Reação: Sódio + Cloro → Cloreto de Sódio",
+          descricao: "Reação de síntese formando sal de cozinha (NaCl), altamente exotérmica.",
+          imagem: "./src/IMG/reacao_sodio_cloro.png"
+        };
+      }
+      //#4 amônia / Ácido Sulfúrico
+      if ((e1 === "amonia" && e2 === "acido-sulfurico") || (e1 === "acido-sulfurico" && e2 === "amonia")) {
+        reacao = {
+          titulo: "Reação: Amônia + Ácido Sulfúrico → Sulfato de Amônio",
+          descricao: "Reação de neutralização ácido-base formando (NH₄)₂SO₄.",
+          imagem: "reacao_amonia_acido.png"
+        };
+      }
+
+
+      titulo.innerText = reacao.titulo;
+      descricao.innerText = reacao.descricao;
+      imagem.src = reacao.imagem;
+      resultado.style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
