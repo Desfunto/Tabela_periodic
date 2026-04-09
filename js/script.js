@@ -358,7 +358,7 @@ function mostrarReacao() {
         titulo.innerText = "Nenhuma reação cadastrada";
         descricao.innerText = "Essa combinação não possui reação registrada.";
         imagem.style.display = "none";
-        resultado.style.display = "center";
+        resultado.style.display = "flex";
         return;
     }
 
