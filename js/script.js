@@ -376,5 +376,5 @@ function mostrarReacao() {
 
     imagem.src = reacao.imagem;
 
-    resultado.style.display = "flex";
+    resultado.style.display = "center";
 }
