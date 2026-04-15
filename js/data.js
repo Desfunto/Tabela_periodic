@@ -157,174 +157,250 @@ export const REACOES = {
     // 1° C + O
     "carbono+oxigenio": {
         titulo: "Reação: Carbono + Oxigênio → Dióxido de Carbono",
-        descricao: "Combustão completa do carbono formando CO₂.",
+        equacao: "C + O₂ → CO₂",
+        descricao: "Combustão completa do carbono.",
+        ligacao: "Covalente",
+        condicoes: "Alta temperatura (combustão)",
         imagem: "./src/REACT/CO2.png"
     },
 
     // 2° Xe + F
     "fluor+xenonio": {
         titulo: "Reação: Xenônio + Flúor → Fluoreto de Xenônio",
-        descricao: "Formação de compostos como XeF₂.",
+        equacao: "Xe + F₂ → XeF₂",
+        descricao: "Formação de composto de gás nobre.",
+        ligacao: "Covalente",
+        condicoes: "Alta pressão e temperatura",
         imagem: "./src/REACT/XEF2.png"
     },
 
     // 3° Na + I
     "iodo+sodio": {
         titulo: "Reação: Sódio + Iodo → Iodeto de Sódio",
-        descricao: "Reação de síntese formando NaI.",
+        equacao: "2Na + I₂ → 2NaI",
+        descricao: "Reação de síntese formando sal iônico.",
+        ligacao: "Iônica",
+        condicoes: "Espontânea",
         imagem: "./src/REACT/NAI.png"
     },
 
     // 4° H + O
     "hidrogenio+oxigenio": {
         titulo: "Reação: Hidrogênio + Oxigênio → Água",
-        descricao: "Combustão do hidrogênio formando H₂O.",
+        equacao: "2H₂ + O₂ → 2H₂O",
+        descricao: "Combustão do hidrogênio.",
+        ligacao: "Covalente polar + pontes de hidrogênio",
+        condicoes: "Necessita faísca inicial",
         imagem: "./src/REACT/H2O.png"
     },
 
     // 5° K + N
     "nitrogenio+potassio": {
         titulo: "Reação: Potássio + Nitrogênio → Nitreto de Potássio",
-        descricao: "Formação do composto K₃N.",
+        equacao: "6K + N₂ → 2K₃N",
+        descricao: "Formação de composto iônico.",
+        ligacao: "Iônica",
+        condicoes: "Alta temperatura",
         imagem: "./src/REACT/K3N.png"
     },
 
     // 6° Li + As
     "arsenio+litio": {
         titulo: "Reação: Lítio + Arsênio → Arseneto de Lítio",
-        descricao: "Formação do composto Li₃As.",
+        equacao: "3Li + As → Li₃As",
+        descricao: "Formação de composto iônico.",
+        ligacao: "Iônica",
+        condicoes: "Alta temperatura",
         imagem: "./src/REACT/LI3AS.png"
     },
 
     // 7° Ag + S
     "enxofre+prata": {
         titulo: "Reação: Prata + Enxofre → Sulfeto de Prata",
-        descricao: "Formação de Ag₂S.",
+        equacao: "2Ag + S → Ag₂S",
+        descricao: "Reação de escurecimento da prata.",
+        ligacao: "Iônica",
+        condicoes: "Ambiente úmido",
         imagem: "./src/REACT/AG2S.png"
     },
 
     // 8° Fe + S
     "enxofre+ferro": {
         titulo: "Reação: Ferro + Enxofre → Sulfeto de Ferro",
-        descricao: "Reação formando FeS.",
+        equacao: "Fe + S → FeS",
+        descricao: "Reação de síntese.",
+        ligacao: "Iônica",
+        condicoes: "Aquecimento",
         imagem: "./src/REACT/FES.png"
     },
 
     // 9° Na + Cl
     "cloro+sodio": {
         titulo: "Reação: Sódio + Cloro → Cloreto de Sódio",
-        descricao: "Formação do sal NaCl.",
+        equacao: "2Na + Cl₂ → 2NaCl",
+        descricao: "Formação de sal de cozinha.",
+        ligacao: "Iônica",
+        condicoes: "Reação espontânea e exotérmica",
         imagem: "./src/REACT/NACL.png"
     },
 
     // 10° H + Cl
     "cloro+hidrogenio": {
         titulo: "Reação: Hidrogênio + Cloro → Ácido Clorídrico",
-        descricao: "Formação do HCl.",
+        equacao: "H₂ + Cl₂ → 2HCl",
+        descricao: "Formação de gás ácido.",
+        ligacao: "Covalente polar",
+        condicoes: "Luz ou calor",
         imagem: "./src/REACT/HCL.png"
     },
 
     // 11° Cu + O
     "cobre+oxigenio": {
         titulo: "Reação: Cobre + Oxigênio → Óxido de Cobre",
-        descricao: "Oxidação do cobre formando CuO.",
+        equacao: "2Cu + O₂ → 2CuO",
+        descricao: "Oxidação do cobre.",
+        ligacao: "Iônica",
+        condicoes: "Aquecimento",
         imagem: "./src/REACT/CUO.png"
     },
 
     // 12° C + H
     "carbono+hidrogenio": {
         titulo: "Reação: Carbono + Hidrogênio → Hidrocarbonetos",
-        descricao: "Formação de compostos como CH₄.",
+        equacao: "C + 2H₂ → CH₄",
+        descricao: "Formação do metano.",
+        ligacao: "Covalente",
+        condicoes: "Alta pressão e catalisador",
         imagem: "./src/REACT/CH4.png"
+
     },
 
     // 13° Li + F
     "fluor+litio": {
         titulo: "Reação: Lítio + Flúor → Fluoreto de Lítio",
-        descricao: "Formação do composto LiF.",
+        equacao: "2Li + F₂ → 2LiF",
+        descricao: "Formação de composto iônico.",
+        ligacao: "Iônica",
+        condicoes: "Espontânea",
         imagem: "./src/REACT/LIF.png"
     },
 
     // 14° Ca + Cl
     "calcio+cloro": {
         titulo: "Reação: Cálcio + Cloro → Cloreto de Cálcio",
-        descricao: "Formação de CaCl₂.",
+        equacao: "Ca + Cl₂ → CaCl₂",
+        descricao: "Formação de sal iônico.",
+        ligacao: "Iônica",
+        condicoes: "Aquecimento",
         imagem: "./src/REACT/CACL2.png"
     },
 
     // 15° Mg + Cl
     "cloro+magnesio": {
         titulo: "Reação: Magnésio + Cloro → Cloreto de Magnésio",
-        descricao: "Formação de MgCl₂.",
+        equacao: "Mg + Cl₂ → MgCl₂",
+        descricao: "Reação de síntese.",
+        ligacao: "Iônica",
+        condicoes: "Aquecimento",
         imagem: "./src/REACT/MGCL2.png"
     },
 
     // 16° Al + Cl
     "aluminio+cloro": {
         titulo: "Reação: Alumínio + Cloro → Cloreto de Alumínio",
-        descricao: "Formação de AlCl₃.",
+        equacao: "2Al + 3Cl₂ → 2AlCl₃",
+        descricao: "Formação de composto iônico.",
+        ligacao: "Iônica",
+        condicoes: "Alta temperatura",
         imagem: "./src/REACT/ALCL3.png"
     },
 
     // 17° H + F
     "fluor+hidrogenio": {
         titulo: "Reação: Hidrogênio + Flúor → Ácido Fluorídrico",
-        descricao: "Formação do HF.",
+        equacao: "H₂ + F₂ → 2HF",
+        descricao: "Reação altamente perigosa.",
+        ligacao: "Covalente polar",
+        condicoes: "Extremamente exotérmica",
         imagem: "./src/REACT/HF.png"
     },
 
     // 18° H + Br
     "bromo+hidrogenio": {
         titulo: "Reação: Hidrogênio + Bromo → Ácido Bromídrico",
-        descricao: "Formação do HBr.",
+        equacao: "H₂ + Br₂ → 2HBr",
+        descricao: "Formação de ácido.",
+        ligacao: "Covalente polar",
+        condicoes: "Aquecimento",
         imagem: "./src/REACT/HBR.png"
     },
 
     // 19° Li + N
     "litio+nitrogenio": {
         titulo: "Reação: Lítio + Nitrogênio → Nitreto de Lítio",
-        descricao: "Formação do Li₃N.",
+        equacao: "6Li + N₂ → 2Li₃N",
+        descricao: "Formação de composto iônico.",
+        ligacao: "Iônica",
+        condicoes: "Alta temperatura",
         imagem: "./src/REACT/LI3N.png"
     },
 
     // 20° N + H
     "hidrogenio+nitrogenio": {
         titulo: "Reação: Nitrogênio + Hidrogênio → Amônia",
-        descricao: "Formação de NH₃.",
+        equacao: "N₂ + 3H₂ → 2NH₃",
+        descricao: "Processo Haber.",
+        ligacao: "Covalente",
+        condicoes: "Alta pressão, temperatura e catalisador",
         imagem: "./src/REACT/NH3.png"
     },
 
     // 21° S + H
     "enxofre+hidrogenio": {
         titulo: "Reação: Enxofre + Hidrogênio → Sulfeto de Hidrogênio",
-        descricao: "Formação de H₂S.",
+        equacao: "H₂ + S → H₂S",
+        descricao: "Formação de gás tóxico.",
+        ligacao: "Covalente polar",
+        condicoes: "Aquecimento",
         imagem: "./src/REACT/H2S.png"
     },
 
     // 22° Na + H₂O (extra)
     "agua+sodio": {
         titulo: "Reação: Sódio + Água → Hidróxido de Sódio + Hidrogênio",
-        descricao: "Reação altamente exotérmica formando NaOH.",
+        equacao: "2Na + 2H₂O → 2NaOH + H₂",
+        descricao: "Reação altamente explosiva.",
+        ligacao: "Iônica + liberação de H₂",
+        condicoes: "Contato com água",
         imagem: "./src/REACT/NAOH.png"
     },
 
     // 23° NH₃ + H₂SO₄ (extra)
     "acido-sulfurico+amonia": {
         titulo: "Reação: Amônia + Ácido Sulfúrico → Sulfato de Amônio",
-        descricao: "Reação ácido-base formando (NH₄)₂SO₄.",
+        equacao: "2NH₃ + H₂SO₄ → (NH₄)₂SO₄",
+        descricao: "Reação ácido-base.",
+        ligacao: "Iônica",
+        condicoes: "Ambiente controlado",
         imagem: "./src/REACT/NH4SO4.png"
     },
 
     // 24° Mg + O
     "magnesio+oxigenio": {
         titulo: "Reação: Magnésio + Oxigênio → Óxido de Magnésio",
-        descricao: "Combustão do magnésio formando MgO.",
+        equacao: "2Mg + O₂ → 2MgO",
+        descricao: "Combustão com luz intensa.",
+        ligacao: "Iônica",
+        condicoes: "Alta temperatura",
         imagem: "./src/REACT/MGO.png"
     },
     // 25° Al + O
     "aluminio+oxigenio": {
         titulo: "Reação: Alumínio + Oxigênio → Óxido de Alumínio",
-        descricao: "Oxidação do alumínio formando Al₂O₃.",
+        equacao: "4Al + 3O₂ → 2Al₂O₃",
+        descricao: "Oxidação formando camada protetora.",
+        ligacao: "Iônica",
+        condicoes: "Contato com ar",
         imagem: "./src/REACT/AL2O3.png"
     }
 };

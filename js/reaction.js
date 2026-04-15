@@ -17,12 +17,18 @@ export function mostrarReacao() {
 
     const titulo = document.getElementById("titulo");
     const descricao = document.getElementById("descricao");
+    const equacao = document.getElementById("equacao");
+    const ligacao = document.getElementById("ligacao");
+    const condicoes = document.getElementById("condicoes");
     const imagem = document.getElementById("imagem");
     const resultado = document.getElementById("resultado");
 
     if (!reacao) {
         titulo.innerText = "Sem reação";
         descricao.innerText = "Não cadastrada";
+        equacao.innerText = "Não cadastrada";
+        ligacao.innerText = "Não cadastrada";
+        condicoes.innerText = "Não cadastrada";
         imagem.style.display = "none";
         resultado.style.display = "block";
         return;
@@ -30,6 +36,9 @@ export function mostrarReacao() {
 
     titulo.innerText = reacao.titulo;
     descricao.innerText = reacao.descricao;
+    equacao.innerText = reacao.equacao;
+    ligacao.innerText = reacao.ligacao;
+    condicoes.innerText = reacao.condicoes;
 
     imagem.src = reacao.imagem;
     imagem.style.display = "";

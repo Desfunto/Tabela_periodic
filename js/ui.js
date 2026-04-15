@@ -24,8 +24,8 @@ export function mostrarPainelElemento(sym) {
 
     document.getElementById("popup-titulo").innerText = data.nome;
     document.getElementById("popup-simbolo").innerText = `Símbolo: ${sym}`;
-    document.getElementById("popup-numero").innerText = `Número Atômico: ${data.numero}`;
-    document.getElementById("popup-massa").innerText = `Massa Atômica: ${data.massa}`;
+    document.getElementById("popup-numero").innerText = `Número: ${data.numero}`;
+    document.getElementById("popup-massa").innerText = `Massa: ${data.massa}`;
 
     const img = document.getElementById("popup-img");
     img.src = data.imagem;
