@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Reações Químicas</title>
+  <link rel="stylesheet" href="./src/CSS/tabela.css">
+</head>
+
+<body>
+  <header>
+    🔬 Tabela de Reações Químicas
+  </header>
+
+  <main>
+    <div id="group_popup_panel" style="display:none;" class="popup-panel">
+      <div class="popup-info">
+        <h3 id="popup-titulo"></h3>
+        <p id="popup-simbolo"></p>
+        <p id="popup-numero"></p>
+        <p id="popup-massa"></p>
+      </div>
+      <div class="popup-image">
+        <img id="popup-img" src="" alt="Imagem do elemento" />
+      </div>
+    </div>
+    <div class="periodic-table">
+      <!-- Linha 1 -->
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('H',1,'1.008')">
+        <div class="num">1</div>
+        <div class="sym">H</div>
+      </div>
+      <!-- Painel fixo no espaço vazio -->
+      <div class="gap" style="grid-column: span 16">
+
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('He')">
+        <div class="num">2</div>
+        <div class="sym">He</div>
+      </div>
+      <!-- Linha 2 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Li')">
+        <div class="num">3</div>
+        <div class="sym">Li</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Be')">
+        <div class="num">4</div>
+        <div class="sym">Be</div>
+      </div>
+      <div class="gap" style="grid-column: span 10"></div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('B')">
+        <div class="num">5</div>
+        <div class="sym">B</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('C')">
+        <div class="num">6</div>
+        <div class="sym">C</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('N')">
+        <div class="num">7</div>
+        <div class="sym">N</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('O')">
+        <div class="num">8</div>
+        <div class="sym">O</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('F')">
+        <div class="num">9</div>
+        <div class="sym">F</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Ne')">
+        <div class="num">10</div>
+        <div class="sym">Ne</div>
+      </div>
+
+      <!-- Linha 3 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Na')">
+        <div class="num">11</div>
+        <div class="sym">Na</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Mg')">
+        <div class="num">12</div>
+        <div class="sym">Mg</div>
+      </div>
+      <div class="gap" style="grid-column: span 10"></div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Al')">
+        <div class="num">13</div>
+        <div class="sym">Al</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Si')">
+        <div class="num">14</div>
+        <div class="sym">Si</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('P')">
+        <div class="num">15</div>
+        <div class="sym">P</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('S')">
+        <div class="num">16</div>
+        <div class="sym">S</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('Cl')">
+        <div class="num">17</div>
+        <div class="sym">Cl</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Ar')">
+        <div class="num">18</div>
+        <div class="sym">Ar</div>
+      </div>
+
+      <!-- Linha 4 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('K')">
+        <div class="num">19</div>
+        <div class="sym">K</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Ca')">
+        <div class="num">20</div>
+        <div class="sym">Ca</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Sc')">
+        <div class="num">21</div>
+        <div class="sym">Sc</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ti')">
+        <div class="num">22</div>
+        <div class="sym">Ti</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('V')">
+        <div class="num">23</div>
+        <div class="sym">V</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cr')">
+        <div class="num">24</div>
+        <div class="sym">Cr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Mn')">
+        <div class="num">25</div>
+        <div class="sym">Mn</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Fe')">
+        <div class="num">26</div>
+        <div class="sym">Fe</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Co')">
+        <div class="num">27</div>
+        <div class="sym">Co</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ni')">
+        <div class="num">28</div>
+        <div class="sym">Ni</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cu')">
+        <div class="num">29</div>
+        <div class="sym">Cu</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Zn')">
+        <div class="num">30</div>
+        <div class="sym">Zn</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Ga')">
+        <div class="num">31</div>
+        <div class="sym">Ga</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Ge')">
+        <div class="num">32</div>
+        <div class="sym">Ge</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('As')">
+        <div class="num">33</div>
+        <div class="sym">As</div>
+      </div>
+      <div class="cell nonmetal" onclick="selecionarElementoDaTabela('Se')">
+        <div class="num">34</div>
+        <div class="sym">Se</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('Br')">
+        <div class="num">35</div>
+        <div class="sym">Br</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Kr')">
+        <div class="num">36</div>
+        <div class="sym">Kr</div>
+      </div>
+
+      <!-- Linha 5 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Rb')">
+        <div class="num">37</div>
+        <div class="sym">Rb</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Sr')">
+        <div class="num">38</div>
+        <div class="sym">Sr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Y')">
+        <div class="num">39</div>
+        <div class="sym">Y</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Zr')">
+        <div class="num">40</div>
+        <div class="sym">Zr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Nb')">
+        <div class="num">41</div>
+        <div class="sym">Nb</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Mo')">
+        <div class="num">42</div>
+        <div class="sym">Mo</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Tc')">
+        <div class="num">43</div>
+        <div class="sym">Tc</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ru')">
+        <div class="num">44</div>
+        <div class="sym">Ru</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Rh')">
+        <div class="num">45</div>
+        <div class="sym">Rh</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Pd')">
+        <div class="num">46</div>
+        <div class="sym">Pd</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ag')">
+        <div class="num">47</div>
+        <div class="sym">Ag</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cd')">
+        <div class="num">48</div>
+        <div class="sym">Cd</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('In')">
+        <div class="num">49</div>
+        <div class="sym">In</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Sn')">
+        <div class="num">50</div>
+        <div class="sym">Sn</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Sb')">
+        <div class="num">51</div>
+        <div class="sym">Sb</div>
+      </div>
+      <div class="cell metalloid" onclick="selecionarElementoDaTabela('Te')">
+        <div class="num">52</div>
+        <div class="sym">Te</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('I')">
+        <div class="num">53</div>
+        <div class="sym">I</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Xe')">
+        <div class="num">54</div>
+        <div class="sym">Xe</div>
+      </div>
+
+      <!-- Linha 6 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Cs')">
+        <div class="num">55</div>
+        <div class="sym">Cs</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Ba')">
+        <div class="num">56</div>
+        <div class="sym">Ba</div>
+      </div>
+      <div class="cell lanth">
+        <div class="num">57-71</div>
+        <div class="sym">La-Lu</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Hf')">
+        <div class="num">72</div>
+        <div class="sym">Hf</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ta')">
+        <div class="num">73</div>
+        <div class="sym">Ta</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('W')">
+        <div class="num">74</div>
+        <div class="sym">W</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Re')">
+        <div class="num">75</div>
+        <div class="sym">Re</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Os')">
+        <div class="num">76</div>
+        <div class="sym">Os</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ir')">
+        <div class="num">77</div>
+        <div class="sym">Ir</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Pt')">
+        <div class="num">78</div>
+        <div class="sym">Pt</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Au')">
+        <div class="num">79</div>
+        <div class="sym">Au</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Hg')">
+        <div class="num">80</div>
+        <div class="sym">Hg</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Tl')">
+        <div class="num">81</div>
+        <div class="sym">Tl</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Pb')">
+        <div class="num">82</div>
+        <div class="sym">Pb</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Bi')">
+        <div class="num">83</div>
+        <div class="sym">Bi</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Po')">
+        <div class="num">84</div>
+        <div class="sym">Po</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('At')">
+        <div class="num">85</div>
+        <div class="sym">At</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Rn')">
+        <div class="num">86</div>
+        <div class="sym">Rn</div>
+      </div>
+
+      <!-- Linha 7 -->
+      <div class="cell alkali" onclick="selecionarElementoDaTabela('Fr')">
+        <div class="num">87</div>
+        <div class="sym">Fr</div>
+      </div>
+      <div class="cell alkaline" onclick="selecionarElementoDaTabela('Ra')">
+        <div class="num">88</div>
+        <div class="sym">Ra</div>
+      </div>
+      <div class="cell actin">
+        <div class="num">89-103</div>
+        <div class="sym">Ac-Lr</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Rf')">
+        <div class="num">104</div>
+        <div class="sym">Rf</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Db')">
+        <div class="num">105</div>
+        <div class="sym">Db</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Sg')">
+        <div class="num">106</div>
+        <div class="sym">Sg</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Bh')">
+        <div class="num">107</div>
+        <div class="sym">Bh</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Hs')">
+        <div class="num">108</div>
+        <div class="sym">Hs</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Mt')">
+        <div class="num">109</div>
+        <div class="sym">Mt</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Ds')">
+        <div class="num">110</div>
+        <div class="sym">Ds</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Rg')">
+        <div class="num">111</div>
+        <div class="sym">Rg</div>
+      </div>
+      <div class="cell transition" onclick="selecionarElementoDaTabela('Cn')">
+        <div class="num">112</div>
+        <div class="sym">Cn</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Nh')">
+        <div class="num">113</div>
+        <div class="sym">Nh</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Fl')">
+        <div class="num">114</div>
+        <div class="sym">Fl</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Mc')">
+        <div class="num">115</div>
+        <div class="sym">Mc</div>
+      </div>
+      <div class="cell post-transition" onclick="selecionarElementoDaTabela('Lv')">
+        <div class="num">116</div>
+        <div class="sym">Lv</div>
+      </div>
+      <div class="cell halogen" onclick="selecionarElementoDaTabela('Ts')">
+        <div class="num">117</div>
+        <div class="sym">Ts</div>
+      </div>
+      <div class="cell noble" onclick="selecionarElementoDaTabela('Og')">
+        <div class="num">118</div>
+        <div class="sym">Og</div>
+      </div>
+    </div>
+
+    <!-- Lantanídeos -->
+    <div class="extra">
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('La')">
+        <div class="num">57</div>
+        <div class="sym">La</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Ce')">
+        <div class="num">58</div>
+        <div class="sym">Ce</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Pr')">
+        <div class="num">59</div>
+        <div class="sym">Pr</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Nd')">
+        <div class="num">60</div>
+        <div class="sym">Nd</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Pm')">
+        <div class="num">61</div>
+        <div class="sym">Pm</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Sm')">
+        <div class="num">62</div>
+        <div class="sym">Sm</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Eu')">
+        <div class="num">63</div>
+        <div class="sym">Eu</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Gd')">
+        <div class="num">64</div>
+        <div class="sym">Gd</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Tb')">
+        <div class="num">65</div>
+        <div class="sym">Tb</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Dy')">
+        <div class="num">66</div>
+        <div class="sym">Dy</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Ho')">
+        <div class="num">67</div>
+        <div class="sym">Ho</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Er')">
+        <div class="num">68</div>
+        <div class="sym">Er</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Tm')">
+        <div class="num">69</div>
+        <div class="sym">Tm</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Yb')">
+        <div class="num">70</div>
+        <div class="sym">Yb</div>
+      </div>
+      <div class="cell lanth" onclick="selecionarElementoDaTabela('Lu')">
+        <div class="num">71</div>
+        <div class="sym">Lu</div>
+      </div>
+    </div>
+
+    <!-- Actinídeos -->
+    <div class="extra">
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Ac')">
+        <div class="num">89</div>
+        <div class="sym">Ac</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Th')">
+        <div class="num">90</div>
+        <div class="sym">Th</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Pa')">
+        <div class="num">91</div>
+        <div class="sym">Pa</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('U')">
+        <div class="num">92</div>
+        <div class="sym">U</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Np')">
+        <div class="num">93</div>
+        <div class="sym">Np</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Pu')">
+        <div class="num">94</div>
+        <div class="sym">Pu</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Am')">
+        <div class="num">95</div>
+        <div class="sym">Am</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Cm')">
+        <div class="num">96</div>
+        <div class="sym">Cm</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Bk')">
+        <div class="num">97</div>
+        <div class="sym">Bk</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Cf')">
+        <div class="num">98</div>
+        <div class="sym">Cf</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Es')">
+        <div class="num">99</div>
+        <div class="sym">Es</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Fm')">
+        <div class="num">100</div>
+        <div class="sym">Fm</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Md')">
+        <div class="num">101</div>
+        <div class="sym">Md</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('No')">
+        <div class="num">102</div>
+        <div class="sym">No</div>
+      </div>
+      <div class="cell actin" onclick="selecionarElementoDaTabela('Lr')">
+        <div class="num">103</div>
+        <div class="sym">Lr</div>
+      </div>
+    </div>
+
+    <div class="chips" id="chips">
+      <div class="chip">Elemento 1: Am</div>
+      <div class="chip">Elemento 2: Fm</div>
+      <div class="chip">Próximo clique → Elemento 1</div>
+    </div>
+
+    <div class="selector">
+      <label for="element1">Escolha o primeiro elemento:</label>
+      <select id="element1">
+        <option value="agua">Água (H₂O)</option>
+        <option value="sodio">Sódio (Na)</option>
+        <option value="cloro">Cloro (Cl₂)</option>
+        <option value="hidrogenio">Hidrogênio (H₂)</option>
+        <option value="oxigenio">Oxigênio (O₂)</option>
+        <option value="amonia">Amônia (NH₃)</option>
+        <option value="acido-sulfurico">Ácido Sulfúrico (H₂SO₄)</option>
+      </select>
+
+      <label for="element2">Escolha o segundo elemento:</label>
+      <select id="element2">
+        <option value="sodio">Sódio (Na)</option>
+        <option value="agua">Água (H₂O)</option>
+        <option value="cloro">Cloro (Cl₂)</option>
+        <option value="hidrogenio">Hidrogênio (H₂)</option>
+        <option value="oxigenio">Oxigênio (O₂)</option>
+        <option value="amonia">Amônia (NH₃)</option>
+        <option value="acido-sulfurico">Ácido Sulfúrico (H₂SO₄)</option>
+      </select>
+
+      <button onclick="mostrarReacao()">Ver Reação</button>
+    </div>
+
+    <div id="resultado" class="reaction-result" ">
+      <h2 id="titulo"></h2>
+      <p id="descricao"></p>
+      <img id="imagem" src="" alt="reacao">
+    </div>
+    <div id="imageModal" class="image-modal" >
+      <span class="close">&times;</span>
+      <img class="modal-content" id="imgAmpliada">
+    </div>
+  </main>
+  <script type="module" src=".//js/main.js"></script>
+  <br>
+</body>
+
+</html>
