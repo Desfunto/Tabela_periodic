@@ -134,6 +134,35 @@ main {
     margin-bottom: 10px;
 }
 
+/*LEGENDA DA TABELA*/
+.legenda {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 5px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    color: white;
+}
+.legenda-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 5px;
+}
+.item {
+    font-size:12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 5px;
+}
+
+.box {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
 .chip {
     background: rgba(0, 0, 0, .35);
     border: 1px solid var(--accent);
@@ -542,5 +571,13 @@ button:hover {
         padding: 9px 20px;
         text-align: center;
 
+    }
+    .legenda-grid {
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+    .item {
+        font-size: 10px;
     }
 }
