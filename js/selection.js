@@ -1,6 +1,6 @@
 import { valueMap, elementNames } from './data.js';
 import { proximo, setProximo } from './state.js';
-import { updateChips, mostrarPainelElemento } from './ui.js';
+import { mostrarPainelElemento } from './ui.js';
 
 export function ensureOption(selectEl, value, label) {
     const exists = Array.from(selectEl.options).some(o => o.value === value);
@@ -25,7 +25,6 @@ export function selecionarElementoDaTabela(sym) {
 
     setProximo(proximo === 'element1' ? 'element2' : 'element1');
 
-    updateChips();
     mostrarPainelElemento(sym);
 }
 
@@ -37,5 +36,4 @@ export function selecionarComposto(value, label) {
 
     setProximo(proximo === 'element1' ? 'element2' : 'element1');
 
-    updateChips();
 }

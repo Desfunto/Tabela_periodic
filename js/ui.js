@@ -1,22 +1,4 @@
 import { elementData } from './data.js';
-import { proximo } from './state.js';
-
-export function updateChips() {
-    const chips = document.getElementById('chips');
-    const e1 = document.getElementById('element1');
-    const e2 = document.getElementById('element2');
-
-    const t1 = e1.options[e1.selectedIndex]?.text || '-';
-    const t2 = e2.options[e2.selectedIndex]?.text || '-';
-
-    const proximoLabel = proximo === 'element1' ? 'Elemento 1' : 'Elemento 2';
-
-    chips.innerHTML = `
-        <div class="chip">Elemento 1: ${t1}</div>
-        <div class="chip">Elemento 2: ${t2}</div>
-        <div class="chip">Próximo → ${proximoLabel}</div>
-    `;
-}
 
 export function mostrarPainelElemento(sym) {
     const data = elementData[sym];

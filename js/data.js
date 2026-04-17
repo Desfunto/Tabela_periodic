@@ -1,4 +1,3 @@
-
 export const elementNames = {
     H: "Hidrogênio", He: "Hélio", Li: "Lítio", Be: "Berílio", B: "Boro", C: "Carbono", N: "Nitrogênio", O: "Oxigênio", F: "Flúor",
     Ne: "Neônio", Na: "Sódio", Mg: "Magnésio", Al: "Alumínio", Si: "Silício", P: "Fósforo", S: "Enxofre", Cl: "Cloro", Ar: "Argônio",
@@ -22,11 +21,11 @@ export const valueMap = {
     Ga: "galio", Ge: "germanio", As: "arsenio", Se: "selenio", Br: "bromo", Kr: "criptonio", Rb: "rubidio", Sr: "estroncio", Y: "itrio",
     Zr: "zirconio", Nb: "niobio", Mo: "molibdenio", Tc: "tecnecio", Ru: "rutenio", Rh: "rodio", Pd: "paladio", Ag: "prata", Cd: "cadmio",
     In: "indio", Sn: "estanho", Sb: "antimonio", Te: "telurio", I: "iodo", Xe: "xenonio", Cs: "cesio", Ba: "bario", La: "lantanio", Ce: "cerio",
-    Pr: "praseodimio", Nd: "neodimio", Pm: "promecio", Sm: "samario", Eu: "europio", Gd: "gadolnio", Tb: "terbio", Dy: "disprosio", Ho: "holmio",
-    Er: "erbio", Tm: "tulio", Yb: "iterbio", Lu: "lutecio", Hf: "hafnio", Ta: "tantalo", W: "tungstenio", Re: "renio", Os: "osmiio", Ir: "iridio",
+    Pr: "praseodimio", Nd: "neodimio", Pm: "promecio", Sm: "samario", Eu: "europio", Gd: "gadolinio", Tb: "terbio", Dy: "disprosio", Ho: "holmio",
+    Er: "erbio", Tm: "tulio", Yb: "iterbio", Lu: "lutecio", Hf: "hafnio", Ta: "tantalo", W: "tungstenio", Re: "renio", Os: "osmio", Ir: "iridio",
     Pt: "platina", Au: "ouro", Hg: "mercurio", Tl: "talio", Pb: "chumbo", Bi: "bismuto", Po: "polonio", At: "astato", Rn: "radonio", Fr: "francio",
     Ra: "radio", Ac: "actinio", Th: "torio", Pa: "protactinio", U: "uranio", Np: "neptunio", Pu: "plutonio", Am: "americio", Cm: "curio", Bk: "berkelio",
-    Cf: "californio", Es: "einstenio", Fm: "fermio", Md: "mendelevio", No: "nobelio", Lr: "laurencio", Rf: "rutherfodio", Db: "dubnio", Sg: "seaborgio",
+    Cf: "californio", Es: "einstenio", Fm: "fermio", Md: "mendelevio", No: "nobelio", Lr: "laurencio", Rf: "rutherfordio", Db: "dubnio", Sg: "seaborgio",
     Bh: "bohrio", Hs: "hassio", Mt: "meitnerio", Ds: "darmstadio", Rg: "roentgenio", Cn: "copernicio", Nh: "nihonio", Fl: "flerovio", Mc: "moscovio",
     Lv: "livermorio", Ts: "tennessino", Og: "oganessonio"
 };
@@ -158,7 +157,7 @@ export const REACOES = {
     "carbono+oxigenio": {
         titulo: "Reação: Carbono + Oxigênio → Dióxido de Carbono",
         equacao: "C + O₂ → CO₂",
-        descricao: "Combustão completa do carbono.",
+        descricao: "Reação de combustão completa do carbono, formando dióxido de carbono (CO₂), com liberação de energia.",
         ligacao: "Covalente",
         condicoes: "Alta temperatura (combustão)",
         imagem: "./src/REACT/CO2.png"
@@ -168,7 +167,7 @@ export const REACOES = {
     "fluor+xenonio": {
         titulo: "Reação: Xenônio + Flúor → Fluoreto de Xenônio",
         equacao: "Xe + F₂ → XeF₂",
-        descricao: "Formação de composto de gás nobre.",
+        descricao: "Reação de síntese entre xenônio e flúor, formando fluoretos de xenônio sob condições controladas de pressão e temperatura.",
         ligacao: "Covalente",
         condicoes: "Alta pressão e temperatura",
         imagem: "./src/REACT/XEF2.png"
@@ -178,7 +177,7 @@ export const REACOES = {
     "iodo+sodio": {
         titulo: "Reação: Sódio + Iodo → Iodeto de Sódio",
         equacao: "2Na + I₂ → 2NaI",
-        descricao: "Reação de síntese formando sal iônico.",
+        descricao: "Reação de síntese formando iodeto de sódio (NaI), um composto iônico resultante da transferência de elétrons.",
         ligacao: "Iônica",
         condicoes: "Espontânea",
         imagem: "./src/REACT/NAI.png"
@@ -188,7 +187,7 @@ export const REACOES = {
     "hidrogenio+oxigenio": {
         titulo: "Reação: Hidrogênio + Oxigênio → Água",
         equacao: "2H₂ + O₂ → 2H₂O",
-        descricao: "Combustão do hidrogênio.",
+        descricao: "Reação de combustão altamente exotérmica do hidrogênio, formando água (H₂O).",
         ligacao: "Covalente polar + pontes de hidrogênio",
         condicoes: "Necessita faísca inicial",
         imagem: "./src/REACT/H2O.png"
@@ -198,7 +197,7 @@ export const REACOES = {
     "nitrogenio+potassio": {
         titulo: "Reação: Potássio + Nitrogênio → Nitreto de Potássio",
         equacao: "6K + N₂ → 2K₃N",
-        descricao: "Formação de composto iônico.",
+        descricao: "Reação de síntese formando nitreto de potássio (K₃N), um composto iônico obtido em altas temperaturas.",
         ligacao: "Iônica",
         condicoes: "Alta temperatura",
         imagem: "./src/REACT/K3N.png"
@@ -208,7 +207,7 @@ export const REACOES = {
     "arsenio+litio": {
         titulo: "Reação: Lítio + Arsênio → Arseneto de Lítio",
         equacao: "3Li + As → Li₃As",
-        descricao: "Formação de composto iônico.",
+        descricao: "Reação de síntese formando arseneto de lítio (Li₃As), caracterizada pela formação de ligação iônica.",
         ligacao: "Iônica",
         condicoes: "Alta temperatura",
         imagem: "./src/REACT/LI3AS.png"
@@ -218,7 +217,7 @@ export const REACOES = {
     "enxofre+prata": {
         titulo: "Reação: Prata + Enxofre → Sulfeto de Prata",
         equacao: "2Ag + S → Ag₂S",
-        descricao: "Reação de escurecimento da prata.",
+        descricao: "Reação de síntese formando sulfeto de prata (Ag₂S), responsável pelo escurecimento da prata em ambientes com enxofre.",
         ligacao: "Iônica",
         condicoes: "Ambiente úmido",
         imagem: "./src/REACT/AG2S.png"
@@ -228,7 +227,7 @@ export const REACOES = {
     "enxofre+ferro": {
         titulo: "Reação: Ferro + Enxofre → Sulfeto de Ferro",
         equacao: "Fe + S → FeS",
-        descricao: "Reação de síntese.",
+        descricao: "Reação de síntese entre ferro e enxofre, formando sulfeto de ferro (FeS).",
         ligacao: "Iônica",
         condicoes: "Aquecimento",
         imagem: "./src/REACT/FES.png"
@@ -238,7 +237,7 @@ export const REACOES = {
     "cloro+sodio": {
         titulo: "Reação: Sódio + Cloro → Cloreto de Sódio",
         equacao: "2Na + Cl₂ → 2NaCl",
-        descricao: "Formação de sal de cozinha.",
+        descricao: "Reação de síntese altamente exotérmica formando cloreto de sódio (NaCl), um composto iônico estável.",
         ligacao: "Iônica",
         condicoes: "Reação espontânea e exotérmica",
         imagem: "./src/REACT/NACL.png"
@@ -248,7 +247,7 @@ export const REACOES = {
     "cloro+hidrogenio": {
         titulo: "Reação: Hidrogênio + Cloro → Ácido Clorídrico",
         equacao: "H₂ + Cl₂ → 2HCl",
-        descricao: "Formação de gás ácido.",
+        descricao: "Reação de síntese formando ácido clorídrico (HCl), um composto covalente polar.",
         ligacao: "Covalente polar",
         condicoes: "Luz ou calor",
         imagem: "./src/REACT/HCL.png"
@@ -258,7 +257,7 @@ export const REACOES = {
     "cobre+oxigenio": {
         titulo: "Reação: Cobre + Oxigênio → Óxido de Cobre",
         equacao: "2Cu + O₂ → 2CuO",
-        descricao: "Oxidação do cobre.",
+        descricao: "Reação de oxidação do cobre, formando óxido de cobre (CuO) na presença de oxigênio.",
         ligacao: "Iônica",
         condicoes: "Aquecimento",
         imagem: "./src/REACT/CUO.png"
@@ -268,7 +267,7 @@ export const REACOES = {
     "carbono+hidrogenio": {
         titulo: "Reação: Carbono + Hidrogênio → Hidrocarbonetos",
         equacao: "C + 2H₂ → CH₄",
-        descricao: "Formação do metano.",
+        descricao: "Reação de síntese formando hidrocarbonetos, como o metano (CH₄), sob condições específicas de pressão, temperatura e catalisador.",
         ligacao: "Covalente",
         condicoes: "Alta pressão e catalisador",
         imagem: "./src/REACT/CH4.png"
@@ -279,7 +278,7 @@ export const REACOES = {
     "fluor+litio": {
         titulo: "Reação: Lítio + Flúor → Fluoreto de Lítio",
         equacao: "2Li + F₂ → 2LiF",
-        descricao: "Formação de composto iônico.",
+        descricao: "Reação de síntese formando fluoreto de lítio (LiF), um composto iônico.",
         ligacao: "Iônica",
         condicoes: "Espontânea",
         imagem: "./src/REACT/LIF.png"
@@ -289,7 +288,7 @@ export const REACOES = {
     "calcio+cloro": {
         titulo: "Reação: Cálcio + Cloro → Cloreto de Cálcio",
         equacao: "Ca + Cl₂ → CaCl₂",
-        descricao: "Formação de sal iônico.",
+        descricao: "Reação de síntese formando cloreto de cálcio (CaCl₂), um sal iônico.",
         ligacao: "Iônica",
         condicoes: "Aquecimento",
         imagem: "./src/REACT/CACL2.png"
@@ -299,7 +298,7 @@ export const REACOES = {
     "cloro+magnesio": {
         titulo: "Reação: Magnésio + Cloro → Cloreto de Magnésio",
         equacao: "Mg + Cl₂ → MgCl₂",
-        descricao: "Reação de síntese.",
+        descricao: "Reação de síntese formando cloreto de magnésio (MgCl₂), composto iônico obtido por aquecimento.",
         ligacao: "Iônica",
         condicoes: "Aquecimento",
         imagem: "./src/REACT/MGCL2.png"
@@ -309,7 +308,7 @@ export const REACOES = {
     "aluminio+cloro": {
         titulo: "Reação: Alumínio + Cloro → Cloreto de Alumínio",
         equacao: "2Al + 3Cl₂ → 2AlCl₃",
-        descricao: "Formação de composto iônico.",
+        descricao: "Reação de síntese formando cloreto de alumínio (AlCl₃), envolvendo transferência de elétrons.",
         ligacao: "Iônica",
         condicoes: "Alta temperatura",
         imagem: "./src/REACT/ALCL3.png"
@@ -319,7 +318,7 @@ export const REACOES = {
     "fluor+hidrogenio": {
         titulo: "Reação: Hidrogênio + Flúor → Ácido Fluorídrico",
         equacao: "H₂ + F₂ → 2HF",
-        descricao: "Reação altamente perigosa.",
+        descricao: "Reação extremamente exotérmica e violenta formando ácido fluorídrico (HF), exigindo controle rigoroso.",
         ligacao: "Covalente polar",
         condicoes: "Extremamente exotérmica",
         imagem: "./src/REACT/HF.png"
@@ -329,7 +328,7 @@ export const REACOES = {
     "bromo+hidrogenio": {
         titulo: "Reação: Hidrogênio + Bromo → Ácido Bromídrico",
         equacao: "H₂ + Br₂ → 2HBr",
-        descricao: "Formação de ácido.",
+        descricao: "Reação de síntese formando ácido bromídrico (HBr), geralmente sob aquecimento.",
         ligacao: "Covalente polar",
         condicoes: "Aquecimento",
         imagem: "./src/REACT/HBR.png"
@@ -339,7 +338,7 @@ export const REACOES = {
     "litio+nitrogenio": {
         titulo: "Reação: Lítio + Nitrogênio → Nitreto de Lítio",
         equacao: "6Li + N₂ → 2Li₃N",
-        descricao: "Formação de composto iônico.",
+        descricao: "Reação de síntese formando nitreto de lítio (Li₃N), um composto iônico obtido em altas temperaturas.",
         ligacao: "Iônica",
         condicoes: "Alta temperatura",
         imagem: "./src/REACT/LI3N.png"
@@ -349,7 +348,7 @@ export const REACOES = {
     "hidrogenio+nitrogenio": {
         titulo: "Reação: Nitrogênio + Hidrogênio → Amônia",
         equacao: "N₂ + 3H₂ → 2NH₃",
-        descricao: "Processo Haber.",
+        descricao: "Reação de síntese formando amônia (NH₃) pelo processo Haber-Bosch, sob alta pressão, temperatura e catalisador.",
         ligacao: "Covalente",
         condicoes: "Alta pressão, temperatura e catalisador",
         imagem: "./src/REACT/NH3.png"
@@ -359,7 +358,7 @@ export const REACOES = {
     "enxofre+hidrogenio": {
         titulo: "Reação: Enxofre + Hidrogênio → Sulfeto de Hidrogênio",
         equacao: "H₂ + S → H₂S",
-        descricao: "Formação de gás tóxico.",
+        descricao: "Reação de síntese formando sulfeto de hidrogênio (H₂S), um gás tóxico e inflamável.",
         ligacao: "Covalente polar",
         condicoes: "Aquecimento",
         imagem: "./src/REACT/H2S.png"
@@ -369,7 +368,7 @@ export const REACOES = {
     "agua+sodio": {
         titulo: "Reação: Sódio + Água → Hidróxido de Sódio + Hidrogênio",
         equacao: "2Na + 2H₂O → 2NaOH + H₂",
-        descricao: "Reação altamente explosiva.",
+        descricao: "Reação altamente exotérmica entre sódio e água, formando hidróxido de sódio (NaOH) e liberando hidrogênio gasoso.",
         ligacao: "Iônica + liberação de H₂",
         condicoes: "Contato com água",
         imagem: "./src/REACT/NAOH.png"
@@ -379,7 +378,7 @@ export const REACOES = {
     "acido-sulfurico+amonia": {
         titulo: "Reação: Amônia + Ácido Sulfúrico → Sulfato de Amônio",
         equacao: "2NH₃ + H₂SO₄ → (NH₄)₂SO₄",
-        descricao: "Reação ácido-base.",
+        descricao: "Reação ácido-base formando sulfato de amônio ((NH₄)₂SO₄), um sal amplamente utilizado como fertilizante.",
         ligacao: "Iônica",
         condicoes: "Ambiente controlado",
         imagem: "./src/REACT/NH4SO4.png"
@@ -389,7 +388,7 @@ export const REACOES = {
     "magnesio+oxigenio": {
         titulo: "Reação: Magnésio + Oxigênio → Óxido de Magnésio",
         equacao: "2Mg + O₂ → 2MgO",
-        descricao: "Combustão com luz intensa.",
+        descricao: "Reação de combustão do magnésio, formando óxido de magnésio (MgO) com emissão de luz intensa.",
         ligacao: "Iônica",
         condicoes: "Alta temperatura",
         imagem: "./src/REACT/MGO.png"
@@ -398,7 +397,7 @@ export const REACOES = {
     "aluminio+oxigenio": {
         titulo: "Reação: Alumínio + Oxigênio → Óxido de Alumínio",
         equacao: "4Al + 3O₂ → 2Al₂O₃",
-        descricao: "Oxidação formando camada protetora.",
+        descricao: "Reação de oxidação do alumínio, formando óxido de alumínio (Al₂O₃), que atua como camada protetora contra corrosão.",
         ligacao: "Iônica",
         condicoes: "Contato com ar",
         imagem: "./src/REACT/AL2O3.png"
