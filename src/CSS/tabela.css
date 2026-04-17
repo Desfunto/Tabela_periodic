@@ -140,7 +140,7 @@ main {
     max-width: 1000px;
     margin: 10px 5px;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, .35);
     border-radius: 10px;
     color: white;
 }
@@ -163,12 +163,28 @@ main {
     border-radius: 3px;
 }
 
-.chip {
+/*LISTA DE REAÇOES*/
+.lista-reacoes {
+    margin: 5px;
+    padding: 5px;
     background: rgba(0, 0, 0, .35);
-    border: 1px solid var(--accent);
-    padding: 6px 10px;
-    border-radius: 999px;
-    font-size: 14px;
+    border-radius: 10px;
+    color: white;
+}
+.lista-reacoes h3 {
+    margin: 3px;
+    text-align: center;
+}
+#selectReacoes {
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, .35);
+    color: white;
+    border: 1px solid #333;
+    width: 250px;
+}
+option {
+    text-align: center;
 }
 
 .selector {
@@ -176,7 +192,7 @@ main {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
-    margin-bottom: 20px;
+    margin: 10px;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -462,7 +478,12 @@ button:hover {
     .descricao {
         font-size: 12px;
     }
-
+    .lista-reacoes h3 {
+        font-size: 14px;
+    }
+    #selectReacoes {
+        font-size: 12px;
+    }
     .table-wrapper {
     width: 100%;
     overflow-x: auto;
