@@ -160,7 +160,7 @@ export const REACOES = {
         descricao: "Reação de combustão completa do carbono, formando dióxido de carbono (CO₂), com liberação de energia.",
         ligacao: "Covalente",
         condicoes: "Alta temperatura (combustão)",
-        imagem: "./src/REACT/CO2.png"
+        imagem: "./src/REACT/CO2.jpeg"
     },
 
     // 2° Xe + F
