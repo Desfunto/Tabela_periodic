@@ -180,7 +180,7 @@ export const REACOES = {
         descricao: "Reação de síntese formando iodeto de sódio (NaI), um composto iônico resultante da transferência de elétrons.",
         ligacao: "Iônica",
         condicoes: "Espontânea",
-        imagem: "./src/REACT/NAI.png"
+        imagem: "./src/REACT/NAL.png"
     },
 
     // 4° H + O
